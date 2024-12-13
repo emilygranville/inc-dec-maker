@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Increase/Decrease Maker</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="module" src="./index.js"></script>
+    </head>
+    
+    <body>
+
+        <form id="form">
+            <label for="amount">Target stitch count:</label>
+            <input name="amount" type="number">
+
+            <label for="direction">Increasing or decreasing:</label>
+            <select name="direction" id="direction">
+                <option value="inc">Inc</option>
+                <option value="dec">Dec</option>
+            </select>
+
+            <input type="button" name="submit" id="submit" value="Submit">
+        </form>
+
+        <div id="results"></div>
+    </body>
+</html>
