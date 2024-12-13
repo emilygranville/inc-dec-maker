@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, sans-serif;
+    /* color: blue; */
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+p, input, select, label, ul {
+    font-size: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.form-child {
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 5px;
+}

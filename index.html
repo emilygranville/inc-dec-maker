@@ -5,6 +5,7 @@
         <title>Increase/Decrease Maker</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <script type="module" src="./index.js"></script>
+        <link rel="stylesheet" href="index.css">
     </head>
     
     <body>
@@ -18,19 +19,26 @@
         </p>
 
         <form id="form">
-            <label for="count">Target stitch count:</label>
-            <input name="count" type="number" id="count">
+            <div class="form-child">
+                <label for="count">Target stitch count:</label>
+                <input name="count" type="number" id="count">
+            </div>
 
-            <label for="rate">Rate of increase/decrease:</label>
-            <input name="rate" type="number" id="rate">
+            <div class="form-child">
+                <label for="rate">Rate of increase/decrease:</label>
+                <input name="rate" type="number" id="rate">
+                
+            </div>
 
-            <label for="direction">Increasing or decreasing:</label>
-            <select name="direction" id="direction">
-                <option value="inc">Inc</option>
-                <option value="dec">Dec</option>
-            </select>
+            <div class="form-child">
+                <label for="direction">Increasing or decreasing:</label>
+                <select name="direction" id="direction">
+                    <option value="inc">Inc</option>
+                    <option value="dec">Dec</option>
+                </select>
+            </div>
 
-            <input type="button" name="submit" id="submit" value="Submit">
+            <input type="button" name="submit" id="submit" value="Submit" class="form-child">
         </form>
 
         <ul id="results"></ul>

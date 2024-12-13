@@ -16,7 +16,6 @@ submit_button.addEventListener("click", function() {
     }
 });
 
-
 function checkSupportedTarget(targetNum, rateNum) {
     return targetNum % rateNum == 0 ? true : false;
 }
