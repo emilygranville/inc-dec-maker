@@ -12,14 +12,17 @@
         <h1>Increase/Decrease Maker</h1>
         <p>
             Use this tool to help you generate simple crochet instructions for increasing and decreasing.
-            When increasing, put in your target stitch count. When decreasing, it will decrease to 6 stitches
-            from the input number. Make sure that your number is a multiple of 6, as that is currently the
-            only rate that is supported.
+            When increasing, put in your target stitch count. When decreasing, it will decrease to the 
+            number of stitches equal to the rate from the input number. Make sure that your target 
+            is a multiple of your rate. If you do not provide a rate, it will use 6 as a default.
         </p>
 
         <form id="form">
             <label for="count">Target stitch count:</label>
             <input name="count" type="number" id="count">
+
+            <label for="rate">Rate of increase/decrease:</label>
+            <input name="rate" type="number" id="rate">
 
             <label for="direction">Increasing or decreasing:</label>
             <select name="direction" id="direction">
