@@ -43,9 +43,9 @@ function generateIncWords(targetNum, rateNum) {
         if (i == 0) {
             instructionsList.push(`${rateNum}st into magic circle`);
         } else if (i == 1) {
-            instructionsList.push(`Inc to ${rateNum * 2}—inc all around`);
+            instructionsList.push(`Inc to ${rateNum * 2} stitches: inc all around`);
         } else {
-            instructionsList.push(`Inc to ${(i + 1) * rateNum}—${i == 2 ? "" : (i - 1)}sc, inc, repeat`)
+            instructionsList.push(`Inc to ${(i + 1) * rateNum} stitches: (${i == 2 ? "" : (i - 1)}sc, inc)*${rateNum}`)
         }
     }
     return instructionsList;
@@ -55,9 +55,9 @@ function generateDecWords(targetNum, rateNum) {
     let instructionsList = [];
     for (let i = (targetNum / rateNum) - 2; i >= 0; i--) {
         if (i == 0) {
-            instructionsList.push(`Dec to ${rateNum}—dec all around`);
+            instructionsList.push(`Dec to ${rateNum} stitches: dec all around`);
         } else {
-            instructionsList.push(`Dec to ${(i + 1) * rateNum}—${i == 1 ? "" : i}sc, dec, repeat`)
+            instructionsList.push(`Dec to ${(i + 1) * rateNum} stitches: (${i == 1 ? "" : i}sc, dec)*${rateNum}`)
         }
     }
     return instructionsList;
